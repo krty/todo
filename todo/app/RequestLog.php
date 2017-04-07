@@ -1,0 +1,12 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class RequestLog extends Model
+{
+    protected $table = 'request_log';
+    public $timestamps = false;
+    protected $fillable = ['ip','route','time_taken'];
+}
