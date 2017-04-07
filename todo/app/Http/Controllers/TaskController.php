@@ -24,7 +24,7 @@ class TaskController extends Controller
     }
     	$task = new Task;
 		$task->name = $request->name;
-		// $task->done = false;
+		$task->done = false;
 		$task->save();
 	    return redirect('/');
 		

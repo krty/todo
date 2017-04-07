@@ -26,7 +26,6 @@ Route::group(['middleware' => ['web']], function () {
 	 * Add A New Task
 	 */
 	Route::post('/task', 'TaskController@create');
-	Route::get('task/{id}/active','TaskController@getdone');
 	Route::post('task/{id}/active','TaskController@done');
 
 	/**
